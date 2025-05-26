@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 4rem;
+    color: #d4a839;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+body{
+    overflow-x:hidden;
+    background: linear-gradient(45deg,#181C14,#474E68);;
+}
+
+p{
+    width: 80%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 40px;
+}
+
+
+
+li{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color: #A86523;
+    margin-bottom: 5px;
+    list-style: none;
+    font-weight: bold;
+}
+
+li > span{
+    color: #f0f0f0;
+}
+
+.reference{
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    margin-left: 60px;
+    color: #d4a839;
+}
+
+.titulo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: fit-content;
+}
+
+
+
+.separador{
+    width: inherit;
+    height: 2px;
+    background-color: white;
+    margin: 2px auto;
+}
+
+
+.container{ 
+    width: 100dvw;
+    height: 115dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Times New Roman';
+    background: inherit;
+}
+
+.containerEntero{
+    width: 100dvw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.containerEntero input{
+    width: 200px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: white 2px solid;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.containerEntero input:focus{
+    outline: none;
+    color: inherit
+}
+
+.containerEntero button{
+    width: 50px;
+    height: 62px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: white 2px solid;
+    color: white;
+}
+
+.containerEntero button:hover{
+    cursor: pointer;
+    background: linear-gradient(to top, #f0f0fc, transparent);
+}
+
+.resultadosEntero{
+    width: 80%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: #d4a839;
+    filter: drop-shadow(0 0 5px #000c00);
+}
+
+
+
+.containerArchivo{
+    width: 100dvw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.containerArchivo button{
+    width: 50px;
+    height: 62px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: white 2px solid;
+    color: white;
+}
+
+.containerArchivo button:hover{
+    cursor: pointer;
+    background: linear-gradient(to top, #f0f0fc, transparent);
+}
+
+.resultadosArchivos{
+    width: 80%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color: #d4a839;
+    filter: drop-shadow(0 0 5px #000c00);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    padding: 30px;
+    ;
+}
+
+.containerGlifico{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1rem;
+  
+}
+
+.tab-button {
+  padding: 0.5rem 1rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: border-color 0.3s, background-color 0.3s;
+  color: white;
+}
+
+.tab-button:hover {
+  background-color: #A86523;
+}
+
+.tab-button.active {
+  border-top: 3px solid #A86523;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.containerGlifico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+}
+
+footer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    border-top: white 2px solid;
+    padding: 20px;
+}
+
+
+
+

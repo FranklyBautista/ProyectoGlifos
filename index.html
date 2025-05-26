@@ -6,49 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <span>Frankly Daniel Bautista Escalante V - 31.419.581</span>
-    </header>
-    <main>
-        <h1>Convertidor de Numeros Enteros a Numeros Glificos</h1>
-        <p>
-            En una civilización antigua olvidada, Aethelgard, se utilizaba un
-            sistema numérico peculiar basado en un conjunto limitado de "glifos" y
-            reglas de combinación muy específicas. Su sistema no era puramente
-            posicional ni puramente aditivo/sustractivo como el romano, sino una
-            mezcla compleja que generaba una representación única para cada número.
-        </p>
-        <div>
-            <label for="numero">
-                <span>Ingrese un numero entero positivo:</span>
-                <input type="text" id="numero" placeholder="120">
-            </label>
-        </div>
-        <div class="containerNumero">
-            <button class="btn_procesar">Procesar Numero</button>
-            <div class="resultados">
-                <span class="resultadoNumerico">pp</span>
-            </div>
-        </div>
-        <div>
-            <label for="archivo">
-                <span>Ingrese un Archivo:</span>
-                <input type="text" id="archivo" placeholder="ruta/Archivo.txt">
-            </label>
-        </div>
-        <div class="containerArchivos">
-            <button class="btn_procesarArchivos">Procesar Archivo</button>
-            <div class="resultadosArchivos">
-                
-            </div>
-        </div>
-        
-    </main>
 
-    <script src="codigo.js"></script>
+    <div class="container">
+        <div class="titulo">
+            <h1>Convertidor de Numeros Enteros a Numeros Glificos</h1>
+            <div class="texto">
+                <p>
+                    En una civilización antigua olvidada, Aethelgard, se utilizaba un
+                    sistema numérico peculiar basado en un conjunto limitado de "glifos" y
+                    reglas de combinación muy específicas. Su sistema no era puramente
+                    posicional ni puramente aditivo/sustractivo como el romano, sino una
+                    mezcla compleja que generaba una representación única para cada número.
+                </p>
+
+                
+                <ul>
+                    <h2 class="reference">Referencias</h2>
+                    <li>Σ: <span>1</span></li>
+                    <li>Λ: <span>5</span></li>
+                    <li>Ω: <span>10</span></li>
+                    <li>Δ: <span>50</span></li>
+                    <li>Φ: <span>100</span></li>
+                    <li>Ψ: <span>500</span></li>
+                    <li>Ξ: <span>1000</span></li>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="tabs-container">
+
+            <!-- Botones de pestañas -->
+            <div class="tabs">
+                <button class="tab-button active" data-tab="tabEntero">Número Entero</button>
+                <button class="tab-button" data-tab="tabArchivo">Archivo</button>
+            </div>
+
+            <!-- Contenido de pestaña: Entero -->
+            <div class="tab-content active" id="tabEntero">
+                <div class="containerGlifico Entero">
+                    <div class="containerEntero">
+                        <label for="numero">
+                            <span>Ingrese un Número Entero Positivo:</span>
+                            <input type="text" id="numero" placeholder="120" autocomplete="off" />
+                            <button class="btn_procesar material-symbols-outlined">forward</button>
+                        </label>
+                    </div>
+                    <div class="resultadosEntero resultados"></div>
+                </div>
+
+            </div>
+
+            <!-- Contenido de pestaña: Archivo -->
+            <div class="tab-content" id="tabArchivo">
+                <div class="containerGlifico Archivo">
+                    <div class="containerArchivo">
+                        <label for="archivo">
+                            <span>Ingrese un Archivo:</span>
+                            <button id="btnCargarArchivo" class="material-symbols-outlined">Search</button>
+                            <input type="file" id="inputArchivo" accept=".txt" style="display: none" />
+                        </label>
+                    </div>
+                    <div class="resultadosArchivos resultados"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="codigo.js"></script>
 </body>
 
 </html>
