@@ -28,7 +28,7 @@ const btn_Archivo = document.getElementById("btnCargarArchivo");
 function convertir_numero_glifico(numero) {
     let numero_glifico = "";
     for (const [clave, valor] of ordenado) {
-        while (valor <= numero) {
+        while (valor <= numero ) {
             numero -= valor;
             numero_glifico += clave;
         }
@@ -39,8 +39,13 @@ function convertir_numero_glifico(numero) {
 btn_Procesar.addEventListener("click", () => {
     const valor = Number(inputNumero.value.trim());
 
+    if(valor>0 && valor <4000){
         const resultado = convertir_numero_glifico(valor);
-        contenedorResultados.innerHTML = `<h2>El número glífico de ${valor} es: ${resultado}</h2>`;   
+        contenedorResultados.innerHTML = `<h2>El número glífico de ${valor} es: ${resultado}</h2>`;  
+    }else{
+        contenedorResultados.innerHTML = `<h2>Por favor, ingrese un número entre 1 y 3999.</h2>`;
+    }
+        
 
 });
 
